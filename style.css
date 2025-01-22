@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #0f0f0f, #1b1b1b);
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    text-align: center;
+    padding: 3rem 0;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main section {
+    background: #1a1a1a;
+    padding: 3rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.main h2 {
+    color: #1abc9c;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    background: #2d2d2d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.features ul li:hover {
+    background: #333;
+}
+
+.coin-address p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #d35400;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.subscribe-form label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.subscribe-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #2b2b2b;
+    color: #e0e0e0;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subscribe-form input:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 10px #1abc9c;
+}
+
+.subscribe-form button {
+    padding: 1rem;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    background: #111;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    color: #888;
+    font-size: 1rem;
+    border-top: 2px solid #333;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Cards for features */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    color: #1abc9c;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.5;
+    font-size: 1rem;
+}
